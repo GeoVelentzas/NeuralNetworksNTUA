@@ -1,16 +1,15 @@
-Βηματα για τον κώδικα:
+Information and steps:
 
-για προεπεγεργασία των δεδομένων τρέξτε το data_prprocessing.m
+-For data preprocessing run data_preprocessing.m
 
-για εκπαίδευση του δικτύου τρέξτε το create_the_net.m
-(μπορείτε να αλλάξετε τις παραμέτρους στον κώδικα για εκπαίδευση διαφορετικού δικτύου στην 3η γραμμή του κώδικα)
+-For training the net run create_the_net.m (you can change parameters in the 3rd line)
 
-για έλεγχο του δικτύου τρέξτε το test_the_net.m
+-For testing the net run test_the_net.m
 
-Άν θέλέτε να ελέγξετε τα βέλτιστα εξαγόμενα δίκτυα κάντε διπλό κλικ στο:
-NET_20_21_gdx_gdm(59.4%) ή στο NET_20_21_gdx_gdm_noval(60.4%) και τρέξτε το test_the_net.m
-Θα πρέπει πρώτα να έχετε κάνει data_preprocessing και αν η απόδοση δεν είναι η αναμενόμενη θα πρέπει να κάνετε εκ νέου data_preprocessing
+-To check the optimal nets double click either NET_20_21_gdx_gdm(59.4%) or NET_20_21_gdx_gdm_noval(60.4%) and run test_the_net.m (at first run data_preprocessing.m).
 
-Για έλεγχο όλων των δικτύων τρέξτε το evalluate_all.m αλλάζοντας την παράμετρο στη γραμμή 48 του κώδικα απο 1 σε 2 αν θέλετε για 1 ή για 2 hidden layers αντίστοιχα. Αν θέλετε διαφορετικές συναρτήσεις εκπαίδευσης και μάθησης μπορείτε τις αλλάξετε απο τη συνάρτηση BEST.m.
+-For checking the performance of all nets run evaluate_all.m (you can change parameter of line 48 from 1 to 2 for 1 or two layers).
 
-Τα AC_xx.mat περιέχουν τους πίνακες ακρίβειας για διάφορα δίκτυα.
+-To try different activation functions check BEST.m
+
+-AC_xx.mat contain the precision matrices for different nets.
